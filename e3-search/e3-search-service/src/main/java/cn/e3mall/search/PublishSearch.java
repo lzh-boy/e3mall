@@ -19,7 +19,7 @@ public class PublishSearch {
 	@SuppressWarnings({ "resource", "unused" })
 	public static void main(String[] args) throws InterruptedException {
 		ApplicationContext applicationContext = new ClassPathXmlApplicationContext(CLASSPATH_SPRING_APPLICATION_CONTEXT_XML);
-		LOGGER.info("Dubbo Publishing SearchService - {}", "http://localhost:8084/");
+		LOGGER.info("Dubbo Publishing SearchService - {}", "http://127.0.0.1:8084/");
 
 		synchronized (PublishSearch.class) {
 			PublishSearch.class.wait();

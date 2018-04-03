@@ -32,7 +32,7 @@ public class IndexController extends BaseController {
 
 	/**
 	 * 首页 </br>
-	 * http://localhost:8082/ 在spirngmvc里没有找到对应页面，会去web.xml里找 index.html
+	 * http://127.0.0.1:8082/ 在spirngmvc里没有找到对应页面，会去web.xml里找 index.html
 	 * 
 	 * @return
 	 */

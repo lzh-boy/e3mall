@@ -13,7 +13,7 @@ public class PublishOrder {
 	public static void main(String[] args) throws IOException {
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("classpath:spring/applicationContext-*.xml");
 		context.start();
-		LOGGER.info("Dubbo Publishing OrderService - {}", "http://localhost:8091/");
+		LOGGER.info("Dubbo Publishing OrderService - {}", "http://127.0.0.1:8091/");
 		System.in.read();
 		context.close();
 	}

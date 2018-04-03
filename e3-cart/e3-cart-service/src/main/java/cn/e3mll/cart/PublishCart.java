@@ -19,7 +19,7 @@ public class PublishCart {
 	@SuppressWarnings({ "resource", "unused" })
 	public static void main(String[] args) throws InterruptedException {
 		ApplicationContext applicationContext = new ClassPathXmlApplicationContext(CLASSPATH_SPRING_APPLICATION_CONTEXT_XML);
-		LOGGER.info("Dubbo Publishing CartService - {}", "http://localhost:8089/");
+		LOGGER.info("Dubbo Publishing CartService - {}", "http://127.0.0.1:8089/");
 
 		synchronized (PublishCart.class) {
 			PublishCart.class.wait();

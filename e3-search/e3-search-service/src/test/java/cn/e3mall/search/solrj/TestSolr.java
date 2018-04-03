@@ -25,7 +25,7 @@ public class TestSolr {
 	/**
 	 * Solr服务器的URL。
 	 * 
-	 * 例如，如果您在本地计算机上使用标准分发版Solr Web应用程序，则为"http//localhost8983/solr/"。
+	 * 例如，如果您在本地计算机上使用标准分发版Solr Web应用程序，则为"http//127.0.0.18983/solr/"。
 	 * 
 	 * 默认连接 collection1，可指定
 	 * 

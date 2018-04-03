@@ -20,7 +20,7 @@ public class PublishManager {
 	public static void main(String[] args) throws InterruptedException {
 		// 加载 Spring 容器
 		ApplicationContext applicationContext = new ClassPathXmlApplicationContext(CLASSPATH_SPRING_APPLICATION_CONTEXT_XML);
-		LOGGER.info("Dubbo Publishing ManagerService - {}", "http://localhost:8080/");
+		LOGGER.info("Dubbo Publishing ManagerService - {}", "http://127.0.0.1:8080/");
 		// 保持启动状态
 		/*
 		while (true) {
