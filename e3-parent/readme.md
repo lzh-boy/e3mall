@@ -1,7 +1,12 @@
-# 服务器地址
-halt
+# 启动相关 服务
+1. zookeeper
+2. redis
+3. sorl
+4. activemq
+5. fastdfs
 
 ### 192.168.21.101	root 123456
+
 ```
 安装软件：jdk、mysql、tomcat、redis、zookeeper
 ps aux|grep tomcat
