@@ -4,8 +4,10 @@
 - 项目描述:
 	- 宜立方商城是一个综合性的B2C平台，类似京东商城，天猫商城。会员可以在商城浏览商品，加入购物车，下单，参加各种活动。
 	- 宜立方商城采用soa架构（面向服务的架构）。也就是把工程拆分成服务层，表现层两个工程。服务层中包含业务逻辑，只需要对外提供服务即可。变现层只需要处理和页面的交互，业务逻辑都是调用服务层的服务来实现。
-- 系统架构图：
-![这里写图片描述](https://img-blog.csdn.net/20180404010221510?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L05vclJpbkluVGhlU2t5/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+
+- 系统架构图
+![系统架构图](https://img-blog.csdn.net/20180404010221510?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L05vclJpbkluVGhlU2t5/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+
 - 工程架构：
 	- 管理系统：管理商品，用户，内容发布，同步solr索引等功能。
 	- 商城门户：用户可以在前台系统中注册，登录，浏览商品，添加购物车，下单等功能。
@@ -13,8 +15,9 @@
 	- 单点登录系统：将用户的登录映射到所有子系统中，为多个系统之间提供用户登录凭证。
 	- 购物车系统：用户未登录时，存入cookie中。用户登录后，合并cookie的数据，存入redis中。
 	- 订单系统：提供下单，查询订单，修改订单状态吗，定时处理订单等。
-- 网络拓扑图：
-![这里写图片描述](https://img-blog.csdn.net/20180404010326124?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L05vclJpbkluVGhlU2t5/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+
+- 网络拓扑图
+![网络拓扑图](https://img-blog.csdn.net/20180404010326124?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L05vclJpbkluVGhlU2t5/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
 - 相关框架：
 1. `dubbo`: 使用rpc协议进行远程调用，直接使用socket通信。传输效率高，并且可以统计出系统之间的调用关系，调用次数。
