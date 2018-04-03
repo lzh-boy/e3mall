@@ -1,0 +1,20 @@
+package cn.e3mll.order;
+
+import java.io.IOException;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class PublishOrder {
+
+	private static final Logger LOGGER = LoggerFactory.getLogger(PublishOrder.class);
+
+	public static void main(String[] args) throws IOException {
+		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("classpath:spring/applicationContext-*.xml");
+		context.start();
+		LOGGER.info("Dubbo Publishing OrderService - {}", "http://localhost:8091/");
+		System.in.read();
+		context.close();
+	}
+}
